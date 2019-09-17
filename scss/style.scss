@@ -1,0 +1,272 @@
+@import "./normalize.scss";
+@import "./fonts.scss";
+
+// === MIXINS ===
+
+// @mixin font-ProximaNovaRegular {
+//   font-family: "ProximaNovaRegular";
+//   src: url("../fonts/ProximaNovaRegular.ttf") format("truetype");
+//   font-style: normal;
+//   font-weight: normal;
+// }
+
+// @mixin font-ProximaNovaBold {
+//   font-family: "ProximaNovaBold";
+//   src: url("../fonts/ProximaNovaBold.ttf") format("truetype");
+//   font-style: normal;
+//   font-weight: normal;
+// }
+
+// === /MIXINS ===
+
+// === Commons ===
+
+body {
+  font-family: "ProximaNovaRegular";
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "ProximaNovaBold";
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+.region-title-main_one {
+  color: #ffffff;
+  h2 {
+    font-size: 2em;
+    line-height: 2em;
+  }
+  p {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+}
+.region-title-main_two {
+  text-align: center;
+  h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  h1,
+  h3 {
+    color: #666666;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    color: #999999;
+    font-size: 1.5em;
+  }
+}
+
+.section-inner {
+  position: relative;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 200px;
+}
+.avatars-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20vw;
+  text-align: center;
+
+  p {
+    font-size: 1em;
+  }
+}
+// === /Commons ===
+
+// === Header ===
+.header-region {
+  background: linear-gradient(120deg, rgba(239, 107, 0, 0.8) 0%, rgba(205, 219, 57, 0.6) 100%);
+  position: relative;
+
+  .section-inner {
+    flex-direction: column;
+    height: 100vh;
+  }
+  &-wrapper {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      flex-shrink: 1;
+    }
+    &-nav {
+      flex-grow: 1;
+      &_items {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 14px;
+        .nav-item {
+          a {
+            color: #ffffff;
+            font-family: "ProximaNovaBold";
+          }
+          a:active,
+          a:hover {
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+            transition: 0.2s;
+          }
+        }
+        .nav-item + .nav-item {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .header-region-title {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+}
+// === /Header ===
+
+// === About ===
+
+.about-region {
+  background: #ffffff;
+  margin-left: 30px;
+  margin-right: 30px;
+  .section-inner {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  &-avatars {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1em;
+    .avatars-element {
+      img,
+      p,
+      h3 {
+        padding: 1em;
+      }
+    }
+  }
+}
+
+// === /About ===
+
+// === Portfolio ===
+.portfolio-region {
+  background-color: #f1f1f1;
+  height: 100%;
+  img {
+    width: 370px;
+    height: 100%;
+  }
+  .section-inner {
+    flex-direction: column;
+  }
+  &-gallery {
+    position: relative;
+    max-height: auto;
+    display: flex;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .icon_project {
+        box-sizing: content-box;
+        display: flex;
+        padding: 10px;
+        p {
+          opacity: 0;
+          text-align: center;
+          font-size: 16px;
+          line-height: 16px;
+          color: #ffffff;
+          font-family: "Proxima Nova A";
+          font-weight: bold;
+          text-align: center;
+        }
+
+        img:hover {
+          filter: brightness(50%);
+          transition: 2000ms;
+        }
+      }
+    }
+    // &-wrapper:nth-child(1) {
+    //   .icon_project {
+    //     &:nth-child(1) {
+    //     }
+    //     &:nth-child(2) {
+    //     }
+    //     &:nth-child(3) {
+    //     }
+    //   }
+    // }
+    // &-wrapper:nth-child(2) {
+    //   &:nth-child(1) {
+    //   }
+    //   &:nth-child(2) {
+    //   }
+    //   &:nth-child(3) {
+    //   }
+    // }
+    // &-wrapper:nth-child(3) {
+    //   &:nth-child(1) {
+    //   }
+    //   &:nth-child(2) {
+    //   }
+    //   &:nth-child(3) {
+    //   }
+    // }
+  }
+}
+// === Team ===
+.team-region {
+  background-color: #ffffff;
+  .section-inner {
+    flex-direction: column;
+  }
+  &-place {
+    display: flex;
+    flex-direction: row;
+    .avatars-element {
+      flex-basis: 20%;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      &:first-child {
+        padding-left: 0;
+      }
+      .avatar-title {
+        padding: 20px;
+      }
+    }
+    .icon-social_network {
+      display: flex;
+      font-size: 2em;
+      color: #999999;
+
+      .fa {
+        padding-left: 10px;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+// === /Team ===
