@@ -246,12 +246,7 @@ const contactsRegion = document.querySelector('#contacts'),
     buttonSendMessage = contactsRegion.querySelector('button[type="submit"]');
 // --- Validation ---
 
-// buttonSendMessage.addEventListener('submit', function(e){
-//     let message = [];
-//     if(massage.length > 0){
-//         e.preventDefault();
-//     }
-// });
+
 
 // --- /Validation ---
 //=== /Contacts region ===

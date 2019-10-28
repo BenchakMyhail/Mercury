@@ -1,0 +1,19 @@
+[1mdiff --git a/scripts/main.js b/scripts/main.js[m
+[1mindex a07f16b..f9f4a65 100644[m
+[1m--- a/scripts/main.js[m
+[1m+++ b/scripts/main.js[m
+[36m@@ -246,12 +246,7 @@[m [mconst contactsRegion = document.querySelector('#contacts'),[m
+     buttonSendMessage = contactsRegion.querySelector('button[type="submit"]');[m
+ // --- Validation ---[m
+ [m
+[31m-// buttonSendMessage.addEventListener('submit', function(e){[m
+[31m-//     let message = [];[m
+[31m-//     if(massage.length > 0){[m
+[31m-//         e.preventDefault();[m
+[31m-//     }[m
+[31m-// });[m
+[32m+[m
+ [m
+ // --- /Validation ---[m
+ //=== /Contacts region ===[m
+\ No newline at end of file[m
