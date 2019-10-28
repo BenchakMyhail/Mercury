@@ -1,0 +1,40 @@
+{
+    "clients": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "secondName": "Doe",
+            "foto": "http://dummyimage.com/80x80.png/c0c0c0",
+            "post": "Managing Director",
+            "company": "ABC International",
+            "comment": "Erat ultrices nunc vivamus fermentum torquent, augue quisque aenean morbi gravida ad, facilisis rutrum magna dictumst dapibus sit mi ad consequat himenaeos donec gravida"
+        },
+        {
+            "id": 2,
+            "firstName": "Donald",
+            "secondName": "Trump",
+            "foto": "http://dummyimage.com/80x80.png/f0a0c0",
+            "post": "Head of Board",
+            "company": "The Trump Organization",
+            "comment": "Lobortis eleifend curae ut cras sollicitudin luctus, faucibus lectus laoreet conubia tincidunt, eros etiam habitant tempor nullam"
+        },
+        {
+            "id": 3,
+            "firstName": "Barack",
+            "secondName": "Obama",
+            "foto": "http://dummyimage.com/80x80.png/e0d0b0",
+            "post": "Corporation president",
+            "company": "The Obama Corporation",
+            "comment": "Tristique pretium habitant curabitur justo senectus aliquet libero mattis facilisis morbi ad nam ligula eu ante gravida faucibus inceptos sem pretium quam"
+        },
+        {
+            "id": 4,
+            "firstName": "Captain",
+            "secondName": "America",
+            "post": "Super Hero",
+            "company": "Avengers organization",
+            "foto": "http://dummyimage.com/80x80.png/f5a7c2",
+            "comment": "Magna ad et hendrerit torquent lacus interdum eu ullamcorper, laoreet curabitur tempus nulla dapibus aenean vivamus, habitant nisl cras fermentum aliquam malesuada convallis lacus odio bibendum rutrum dui at dapibus vehicula torquent aenean, vivamus condimentum aliquam tortor nullam aliquet ac commodo pellentesque, vulputate massa leo consectetur sit aliquet vivamus ullamcorper sapien pretium ante metus fusce interdum diam suscipit inceptos dapibus purus, eleifend sapien eget cursus dapibus laoreet duis nostra"
+        }
+    ]
+}

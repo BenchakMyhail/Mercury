@@ -1,0 +1,108 @@
+{
+    "Team": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "secondName": "Richerds",
+            "profession": "Founder & CEO",
+            "foto":"http://dummyimage.com/270x270.png/c0c0c0",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 2,
+            "firstName": "Morich",
+            "secondName": "Patel",
+            "profession": "Technical Lead",
+            "foto":"http://dummyimage.com/270x270.png/1d48b6",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 3,
+            "firstName": "Robin",
+            "secondName": "Mills",
+            "profession": "Senior Software Developer",
+            "foto":"http://dummyimage.com/240x270.png/bdb5af",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 4,
+            "firstName": "Zina",
+            "secondName": "Parker",
+            "profession": "Senior Software Developer",
+            "foto":"http://dummyimage.com/370x470.png/e8f11f",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 5,
+            "firstName": "Miya",
+            "secondName": "Johnson",
+            "profession": "UI/UX Engineer",
+            "foto":"http://dummyimage.com/270x370.png/9fd749",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 6,
+            "firstName": "Jane",
+            "secondName": "Doe",
+            "profession": "Software Developer",
+            "foto":"http://dummyimage.com/470x270.png/b098d8",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 7,
+            "firstName": "Kane",
+            "secondName": "Williams",
+            "profession": "Software Developer",
+            "foto":"http://dummyimage.com/270x470.png/2b7f8c",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        },
+        {
+            "id": 8,
+            "firstName": "John",
+            "secondName": "Doe",
+            "profession": "Software Developer",
+            "foto":"http://dummyimage.com/350x270.png/ff9700",
+            "socialNetworkContacts": {
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://twitter.com",
+                "google": "https://www.google.com",
+                "linkedin": "https://www.linkedin.com"
+            }
+        }       
+    ]
+}

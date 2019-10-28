@@ -8,7 +8,6 @@
  */
 html {
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
@@ -43,7 +42,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body {
   line-height: 1;
-  font-size: 14px;
   /* устанавливаем базовую высоту */ }
 
 ol, ul {
@@ -78,6 +76,11 @@ table {
   /* убираем рамки двойной толщины */
   border-spacing: 0;
   /* убираем расстояние между ячейками */ }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
 
 /**
    * Render the `main` element consistently in IE.

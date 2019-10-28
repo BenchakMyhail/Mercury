@@ -1,3 +1,7 @@
+$font-family-reg: "ProximaNovaRegular";
+$font-bold: 700;
+$font-size-base: 100%;
+
 @font-face {
   font-family: "ProximaNovaRegular";
   src: url("../fonts/ProximaNovaRegular.ttf") format("truetype");
@@ -5,8 +9,40 @@
   font-weight: normal;
 }
 @font-face {
-    font-family: "ProximaNovaBold";
-    src: url("../fonts/ProximaNovaBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNovaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: $font-bold;
+}
+
+body {
+  font-family: $font-family-reg;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-bold;
+}
+// If font-size-base: 100%
+h1 {
+  font-size: 3 * $font-size-base; // 48px
+}
+h2 {
+  font-size: 2.25 * $font-size-base; // 36px
+}
+h3 {
+  font-size: 1.5 * $font-size-base; // 24px
+}
+h4 {
+  font-size: 1.125 * $font-size-base; // 18px
+}
+h5 {
+  font-size: 1 * $font-size-base; // 16px
+}
+p {
+  font-size: 0.875 * $font-size-base; // 14px
 }
