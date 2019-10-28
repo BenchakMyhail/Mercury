@@ -1,6 +1,7 @@
-//BurrgerMenu for headerRegion
-const burger = document.querySelector('.burger-menu');
-const nav = document.querySelector('.list-nav_items');
+//=== headerRegion ===
+const headerRagion = document.querySelector('#home');
+const burger = headerRagion.querySelector('.burger-menu');
+const nav = headerRagion.querySelector('.list-nav_items');
 
 burger.addEventListener('click', function (e) {
     if (nav.classList.contains('list-nav_items--show')) {
@@ -13,13 +14,14 @@ burger.addEventListener('click', function (e) {
         burger.classList.add('burger-menu-active');
     }
 });
+//=== /headerRegion ===
 
-//Carousel for aboutRegion
-const previousSlide = document.querySelector('.arrow-prev');
-const nextSlide = document.querySelector('.arrow-next');
-const carouselItemsList = document.querySelectorAll('.icon_project');
-
-
+//=== portfolioRegion ===
+const portfolioRegion = document.querySelector('#portfolio'),
+    previousSlide = portfolioRegion.querySelector('.arrow-prev'),
+    nextSlide = portfolioRegion.querySelector('.arrow-next'),
+    carouselItemsList = portfolioRegion.querySelectorAll('.icon_project');
+//--- Slider ---
 (function toggleSlideOfPortfolioRegion(buttonPrev, buttonNext, slideList, classNameMainOfList, classNameSwitchable) {
 
     let currentSlide = 0;
@@ -44,11 +46,12 @@ const carouselItemsList = document.querySelectorAll('.icon_project');
     buttonNext.addEventListener('click', toggleSlideNext);
 
 }(previousSlide, nextSlide, carouselItemsList, 'icon_project', 'show-project'));
+//--- /Slider ---
 
-// LightBox for portfolioRegion
+//--- LightBox ---
 const lightBox = document.createElement('div');
 const lightBoxButtonClose = document.createElement('div');
-const baseListForLightBox = document.querySelector('.carousel-basis');
+const baseListForLightBox = portfolioRegion.querySelector('.carousel-basis');
 
 function activeLightBox(item) {
     lightBox.className = 'lightbox';
@@ -72,10 +75,14 @@ lightBoxButtonClose.addEventListener('click', function (e) {
     lightBox.classList.remove('lightbox-active');
 });
 carouselItemsList.forEach(activeLightBox);
+//--- /LightBox ---
 
-// Team-region
+//=== /portfolioRegion ===
 
-const wrapperForListOfTeam = document.querySelector('.team-region-place');
+//=== Team-region ===
+// --- Get data ---
+const teamRegion = document.querySelector('#team'),
+    wrapperForListOfTeam = teamRegion.querySelector('.team-region-place');
 
 (async function () {
     let response = await fetch('../data/team.json');
@@ -103,11 +110,14 @@ const wrapperForListOfTeam = document.querySelector('.team-region-place');
     wrapperForListOfTeam.innerHTML = showList;
 
 })();
+// --- /Get data ---
+//=== /Team-region ===
 
 // === Client region ===
+const clientRegion = document.querySelector('#clients');
 // --- Switch reviews ---
-const switchGroup = document.querySelectorAll('.btn-toggle-group  input');
-const wrapperClientReview = document.querySelector('.client-region-wrapper');
+const switchGroup = clientRegion.querySelectorAll('.btn-toggle-group  input');
+const wrapperClientReview = clientRegion.querySelector('.client-region-wrapper');
 
 function loadClientReview() {
     const xhr = new XMLHttpRequest();
@@ -152,16 +162,14 @@ document.addEventListener("DOMContentLoaded", loadClientReview);
 
 // --- Carousel for Client labels ---
 
-const wrapperOfList = document.querySelector('.list_lables');
-const clientLabelList = document.querySelectorAll('.list_lables li');
-const wrapperClientLabelList = document.querySelector('.client-region-carousel_gallery');
-const clientsLabel = Array.prototype.slice.call(clientLabelList, 0);
-const prevItemButton = document.querySelector('.client-region-carousel .arrow-prev');
-const nextItemButton = document.querySelector('.client-region-carousel .arrow-next');
-
+const wrapperOfList = clientRegion.querySelector('.list_lables'),
+    clientLabelList = clientRegion.querySelectorAll('.list_lables li'),
+    wrapperClientLabelList = clientRegion.querySelector('.client-region-carousel_gallery'),
+    clientsLabel = Array.prototype.slice.call(clientLabelList, 0),
+    prevItemButton = clientRegion.querySelector('.client-region-carousel .arrow-prev'),
+    nextItemButton = clientRegion.querySelector('.client-region-carousel .arrow-next');
 
 function changeCarouselWidth() {
-
     const getWidthWrapper = function (arr, count) {
         arr = arr.slice(0, count).map(function (item) {
             return item.offsetWidth;
@@ -214,8 +222,9 @@ changeCarouselWidth();
 // === /Client region ===
 
 //=== News region ===
-const wrapperNewsRegion = document.querySelector('.news-region-wrapper');
-const buttonShowMore = document.querySelector('.news-region-btn_show_more');
+const newsRegion = document.querySelector('#news'),
+ wrapperNewsRegion = newsRegion.querySelector('.news-region-wrapper'),
+ buttonShowMore = newsRegion.querySelector('.news-region-btn_show_more');
 
 window.onload = function () {
     const itemList = wrapperNewsRegion.querySelector('.list_news li');
