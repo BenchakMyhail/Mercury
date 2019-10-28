@@ -50,8 +50,8 @@ const portfolioRegion = document.querySelector('#portfolio'),
 
 //--- LightBox ---
 const lightBox = document.createElement('div'),
- lightBoxButtonClose = document.createElement('div'),
- baseListForLightBox = portfolioRegion.querySelector('.carousel-basis');
+    lightBoxButtonClose = document.createElement('div'),
+    baseListForLightBox = portfolioRegion.querySelector('.carousel-basis');
 
 function activeLightBox(item) {
     lightBox.className = 'lightbox';
@@ -249,13 +249,31 @@ window.onload = function () {
 
 //=== Contacts region ===
 const contactsRegion = document.querySelector('#contacts'),
-    nameOfSender = contactsRegion.querySelector('input[name = "senderName"]'),
-    emailOfSender = contactsRegion.querySelector('input[name="mail"]'),
-    messageOfSender = contactsRegion.querySelector('textarea[name="messageText"]'),
-    buttonSendMessage = contactsRegion.querySelector('button[type="submit"]');
+    formSendMessage = contactsRegion.querySelector('form[name="sendMessage"]'),
+    formList = formSendMessage.querySelectorAll('.field'),
+    nameOfSender = formSendMessage.querySelector('input[name="senderName"]'),
+    emailOfSender = formSendMessage.querySelector('input[name="mail"]'),
+    messageOfSender = formSendMessage.querySelector('textarea[name="messageText"]'),
+    buttonSendMessage = formSendMessage.querySelector('button[type="submit"]');
 // --- Validation ---
 
-
+formSendMessage.addEventListener('submit', function (e) {
+    e.preventDefault();
+    let fails = formSendMessage.querySelectorAll('.error');
+    for (let k = 0; k < fails.length; k++) {
+        fails[k].remove();
+    }
+    for (let i = 0; i < formList.length; i++) {
+        if (!formList[i].value) {
+            console.log('Error');
+            let fail = document.createElement('div');
+            fail.className = 'error';
+            fail.style.color = 'red';
+            fail.innerHTML = 'Cannot be blank';
+            formList[i].parentElement.insertBefore(fail, formList[i]);
+        }
+    }
+});
 
 // --- /Validation ---
 //=== /Contacts region ===
