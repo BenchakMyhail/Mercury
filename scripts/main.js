@@ -1,7 +1,7 @@
 //=== headerRegion ===
-const headerRagion = document.querySelector('#home');
-const burger = headerRagion.querySelector('.burger-menu');
-const nav = headerRagion.querySelector('.list-nav_items');
+const headerRagion = document.querySelector('#home'),
+    burger = headerRagion.querySelector('.burger-menu'),
+    nav = headerRagion.querySelector('.list-nav_items');
 
 burger.addEventListener('click', function (e) {
     if (nav.classList.contains('list-nav_items--show')) {
@@ -49,9 +49,9 @@ const portfolioRegion = document.querySelector('#portfolio'),
 //--- /Slider ---
 
 //--- LightBox ---
-const lightBox = document.createElement('div');
-const lightBoxButtonClose = document.createElement('div');
-const baseListForLightBox = portfolioRegion.querySelector('.carousel-basis');
+const lightBox = document.createElement('div'),
+ lightBoxButtonClose = document.createElement('div'),
+ baseListForLightBox = portfolioRegion.querySelector('.carousel-basis');
 
 function activeLightBox(item) {
     lightBox.className = 'lightbox';
@@ -223,8 +223,8 @@ changeCarouselWidth();
 
 //=== News region ===
 const newsRegion = document.querySelector('#news'),
- wrapperNewsRegion = newsRegion.querySelector('.news-region-wrapper'),
- buttonShowMore = newsRegion.querySelector('.news-region-btn_show_more');
+    wrapperNewsRegion = newsRegion.querySelector('.news-region-wrapper'),
+    buttonShowMore = newsRegion.querySelector('.news-region-btn_show_more');
 
 window.onload = function () {
     const itemList = wrapperNewsRegion.querySelector('.list_news li');
