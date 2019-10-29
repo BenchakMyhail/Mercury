@@ -85,7 +85,7 @@ const teamRegion = document.querySelector('#team'),
     wrapperForListOfTeam = teamRegion.querySelector('.team-region-place');
 
 (async function () {
-    let response = await fetch('../data/team.json');
+    let response = await fetch('./data/team.json');
     let fileData = await response.json();
 
     let membersTeam = fileData.Team;
@@ -121,7 +121,7 @@ const wrapperClientReview = clientRegion.querySelector('.client-region-wrapper')
 
 function loadClientReview() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', '../data/client.json', true);
+    xhr.open('GET', './data/client.json', true);
     xhr.onload = function () {
         if (this.status == 200) {
             let clientGroup = JSON.parse(this.responseText);
