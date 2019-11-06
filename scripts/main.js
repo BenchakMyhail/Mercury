@@ -101,7 +101,7 @@ const teamRegion = document.querySelector('#team'),
     </div>
     <div class="icons-social-network">
         <a href="${member.socialNetworkContacts.facebook}"><img src="./assets/img/facebook-square-brands.svg" alt="facebooks icon"></a>
-        <a href="${member.socialNetworkContacts.twitter}"><img src="/assets/img/twitter-square-brands.svg" alt="twitters icon"></a>
+        <a href="${member.socialNetworkContacts.twitter}"><img src="./assets/img/twitter-square-brands.svg" alt="twitters icon"></a>
         <a href="${member.socialNetworkContacts.google}"><img src="./assets/img/google-plus-square-brands.svg" alt="gmails icon"></a>
         <a href="${member.socialNetworkContacts.linkedin}"><img src="./assets/img/linkedin-brands.svg" alt="linkedins icon"></a>
     </div>
